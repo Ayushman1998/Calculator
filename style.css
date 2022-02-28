@@ -1,0 +1,140 @@
+
+body{
+    background: linear-gradient(to right, #fc466b, #3f5efb);
+    font-family: 'Orbitron', sans-serif;
+}
+
+#calculator-container{
+    height: 500px;
+    width: 300px;
+    margin: auto;
+    margin-top: 10vh;
+    background: #9dd2ea;
+	background: linear-gradient(#9dd2ea, #8bceec);
+    border-radius: 16px ;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%);
+    overflow: hidden;
+}
+
+#display-box{
+    height: 100px;
+    width: 90%;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: right;
+    font-size: 2rem;
+    background: rgba(0, 0, 0, 0.2);
+	border-radius: 8px;
+    margin: auto;
+    margin-top: 12px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+	box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+}
+
+#display{
+    margin: 4px;
+    overflow: hidden;
+}
+
+#controls{
+    height: 400px;
+    display: flex;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#operators{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.digits{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#operators-down{
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button{
+    background: whitesmoke;
+    height: 40px;
+    width: 50px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+	box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+    user-select: none;
+    overflow: hidden;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.control-button{
+    background-color: lightgray;
+    font-size: 20px;
+}
+
+.digit-button{
+    font-size: 20px;
+}
+
+.digit-button:hover{
+    background: #9c89f6;
+	box-shadow: 0px 4px #6b54d3;
+	color: white;
+}
+
+.control-button:hover{
+    background: #ecde16;
+	box-shadow: 0px 4px #f5a30c;
+	color: #ffffff;
+}
+
+.control-button:active{
+    position: relative;
+    box-shadow: 0px 0px #f5a30c;
+    top: 4px;
+}
+
+.digit-button:active{
+    position: relative;
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
+
+.reset-container{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.reset{
+    width: auto;
+}
+
+.reset:hover{
+    background: rgb(154, 255, 129);
+	box-shadow: 0px 4px #2bff00;
+	color: black;
+}
+
+.reset:active{
+    position: relative;
+    box-shadow: 0px 0px #2bff00;
+    top: 4px;
+}
